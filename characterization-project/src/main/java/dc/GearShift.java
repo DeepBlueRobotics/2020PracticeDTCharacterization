@@ -1,17 +1,17 @@
-package frc.robot;
+package dc;
 
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 
 public class GearShift {
 
-	private static DoubleSolonoid gearShift = new DoubleSolonoid(6,7);
+	private static DoubleSolenoid gearShift = new DoubleSolenoid(6,7);
 
 	public static void shift() {
 		boolean isHigh = true;
 		if(isHigh) {
-			shift.set(DoubleSolenoid.Value.kForward);
+			gearShift.set(DoubleSolenoid.Value.kForward);
 		} else {
-			shift.set(DoubleSolenoid.Value.kReverse);
+			gearShift.set(DoubleSolenoid.Value.kReverse);
 		}
 	}
 
